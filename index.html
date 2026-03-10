@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AS-METAL Catálogos</title>
+
+<style>
+/* --- Estilos Generales --- */
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+/* --- HEADER --- */
+header {
+    background:#74ACDF;
+    padding:20px;
+    text-align:center;
+}
+header img {
+    max-width:350px;
+}
+
+/* --- MENU --- */
+nav {
+    background:#000;
+}
+nav ul {
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:0;
+    padding:10px 0;
+}
+nav a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover {
+    color:#74ACDF;
+}
+
+/* --- SECCION CATÁLOGOS --- */
+.catalogos {
+    padding:50px 20px;
+    text-align:center;
+}
+.catalogos h1 {
+    color:#74ACDF;
+    margin-bottom:40px;
+}
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
+}
+.catalogo {
+    border:2px solid #74ACDF;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+    background:#f9f9f9;
+}
+.catalogo:hover {
+    transform:scale(1.05);
+}
+.catalogo img {
+    width:100%;
+    max-width:200px;
+}
+.catalogo h3 {
+    margin:15px 0;
+}
+.catalogo a {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#74ACDF;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+.catalogo a:hover {
+    background:#5a95c2;
+}
+
+/* --- SECCIÓN CONTACTO --- */
+#contacto {
+    padding:50px 20px;
+    text-align:center;
+    background:#f1f1f1;
+}
+#contacto h1 {
+    color:#74ACDF;
+    margin-bottom:20px;
+}
+#contacto p {
+    font-size:18px;
+    margin:5px 0;
+}
+#contacto a {
+    display:inline-block;
+    margin-top:15px;
+    padding:15px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+#contacto a:hover {
+    background:#1ebe57;
+}
+
+/* --- BOTÓN WHATSAPP FIJO --- */
+#whatsapp-float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+#whatsapp-float:hover {
+    background:#1ebe57;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top:40px;
+    background:#74ACDF;
+    text-align:center;
+    padding:20px;
+    color:white;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- --- HEADER --- -->
+<header>
+    <img src="logo-asmetal.png" alt="Logo AS-METAL">
+</header>
+
+<!-- --- MENÚ --- -->
+<nav>
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#catalogos">Catálogos</a></li>
+<li><a href="#">Productos</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<!-- --- SECCIÓN CATÁLOGOS --- -->
+<section class="catalogos" id="catalogos">
+<h1>Catálogos</h1>
+
+<div class="grid">
+    <div class="catalogo">
+        <img src="logo-asmetal-division.png" alt="AS-METAL División">
+        <h3>AS-METAL División</h3>
+        <a href="catalogo-division.pdf" target="_blank">Ver catálogo</a>
+    </div>
+
+    <div class="catalogo">
+        <img src="logo-asmetal-competition.png" alt="AS-METAL Competition">
+        <h3>AS-METAL Competition</h3>
+        <a href="#">Ver catálogo</a>
+    </div>
+
+    <div class="catalogo">
+        <img src="logo-inolpe.png" alt="INOLPE S.R.L">
+        <h3>INOLPE S.R.L</h3>
+        <a href="#">Ver catálogo</a>
+    </div>
+</div>
+</section>
+
+<!-- --- SECCIÓN CONTACTO --- -->
+<section id="contacto">
+<h1>Contacto</h1>
+<p>WhatsApp: +54 11 3346 6872</p>
+<p>Email: inolpe.srl@gmail.com</p>
+<a href="https://wa.me/541133466872" target="_blank">Enviar WhatsApp</a>
+</section>
+
+<!-- --- BOTÓN WHATSAPP FIJO --- -->
+<a id="whatsapp-float" href="https://wa.me/541133466872" target="_blank">WhatsApp</a>
+
+<!-- --- FOOTER --- -->
+<footer>
+© 2026 AS-METAL Argentina
+</footer>
+
+</body>
+</html>
